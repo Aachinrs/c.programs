@@ -1,20 +1,14 @@
-/*Write a C program to do simple calculations using switch
-input=
-Select the operation '+','-','*','/':+
-Enter two numbers:4 5
-Output=
-Sum:9
-*/
+
 #include<stdio.h>
 int main()
 {
     int i,n1,n2;
-    float result;
+    float result; //float incase division operation produces decimals
     printf("enter your first number:");
     scanf("%d",&n1);
     printf("enter your second number:");
     scanf("%d",&n2);
-    printf("Select your operation \n 1)Addition \n 2)Subtraction\n3)Multiplication\n4)Divison\n");
+    printf("Select your operation \n 1)Addition \n 2)Subtraction \n3)Multiplication \n4)Divison \n");
     scanf("%d",&i);
     switch(i)
     {
@@ -34,6 +28,6 @@ int main()
     printf("invalid operation");
     }
     
-    printf("the result is:%.2f",result);
+    printf("the result is:%.2f",result); 
     
 }
