@@ -1,20 +1,4 @@
-/*Write a C program to input the sides of a triangle and determine whether the triangle is isoceles or not.
-Sample input=
-1
-1
-1
-output=
-isosceles triangle.
 
-
-Sample input=
-2
-3
-4
-output=
-Not a isosceles triangle.
-
-*/
 #include<stdio.h>
 int main ()
 {
@@ -25,7 +9,7 @@ int main ()
     scanf("%d",&b);
     printf("enter the 3rd side:");
     scanf("%d",&c);
-    if (a==b||b==c||c==a)
+    if (a==b&&b!=c||b==c&&c!=a||c==a&&a!=b) // isoceles triangle means a triangle where only 2 sides are equal
     {
         printf("the given triangle is isoscelus");
     }
